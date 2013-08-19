@@ -1,0 +1,23 @@
+Changelog - JillElaine/jquery-idleTimeout.js
+--------------------------------------------
+v1.0.2
++ Complete rewrite of script to support Internet Explorer
+
+v1.0.1
++ Add clearTimeout(idleTimer) to storage_event_reactor
++ Reversed order of dialog buttons. 'Stay logged in' has focus.
++ Move private dialog variable to dialog function
++ Update index.html example page to reference Google hosted JQuery scripts and CSS
+
+v1.0
++ First versioned version
++ Add support for disable of server pings - fix issue #1
++ Move 'event listener' to all windows & tabs, not just 'inactive' ones - fix issue #3
++ Separate 'storage event change' reaction function from 'start dialog timer' function
++ Modify custom callback support - does not override redirect url
++ Add support to disable redirect url
++ Rename 'perform_redirect' logout function to 'perform_logout_procedure'
++ Create 'destroy & remove warning dialog' as separate function
++ Add testing version - jquery-idleTimeout-for-testing.js
+
+
