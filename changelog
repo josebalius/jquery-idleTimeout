@@ -1,5 +1,8 @@
 Changelog - JillElaine/jquery-idleTimeout.js
 --------------------------------------------
+v1.0.3
++ Clean up of code format to standards http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
+
 v1.0.2
 + Complete rewrite of script to support Internet Explorer
 
