@@ -14,12 +14,12 @@
 		<script type="text/javascript" charset="utf-8">
       $(document).ready(function(){
         $(document).idleTimeout({
-          idleTimeLimit:      1200000,        // 'No activity' time limit in milliseconds. 1200000 = 20 Minutes
-          dialogDisplayLimit: 180000,         // Time to display the warning dialog before redirect (and optional callback) in milliseconds. 180000 = 3 Minutes
-          redirectUrl:        '/logout',      // redirect to this url
+          idleTimeLimit: 1200000,       // 'No activity' time limit in milliseconds. 1200000 = 20 Minutes
+          dialogDisplayLimit: 180000,   // Time to display the warning dialog before redirect (and optional callback) in milliseconds. 180000 = 3 Minutes
+          redirectUrl: '/logout',       // redirect to this url
 
           // optional custom callback to perform before redirect
-          customCallback:       false,          // set to false for no customCallback
+          customCallback: false,       // set to false for no customCallback
           // customCallback:    function() {    // define optional custom js function
               // perform custom action before logout
           // },
@@ -27,16 +27,16 @@
           // configure which activity events to detect
           // http://www.quirksmode.org/dom/events/
           // https://developer.mozilla.org/en-US/docs/Web/Reference/Events
-          activityEvents:       'click keypress scroll wheel mousewheel mousemove', // separate each event with a space
+          activityEvents: 'click keypress scroll wheel mousewheel mousemove', // separate each event with a space
 
           //dialog box configuration
-          dialogTitle:          'Session Expiration Warning',
-          dialogText:           'Because you have been inactive, your session is about to expire.',
+          dialogTitle: 'Session Expiration Warning',
+          dialogText: 'Because you have been inactive, your session is about to expire.',
 
           // server-side session keep-alive timer & url
           sessionKeepAliveTimer: 60000, // Ping the server at this interval in milliseconds. 60000 = 1 Minute
           // sessionKeepAliveTimer: false, // Set to false to disable pings.
-          sessionKeepAliveUrl:   '/', // url to ping
+          sessionKeepAliveUrl: '/',  // url to ping
         });
       });
 		</script>
